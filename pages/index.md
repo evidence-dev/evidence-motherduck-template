@@ -3,6 +3,11 @@ title: Welcome to Evidence
 ---
 
 
+```test_connection
+
+select 1 from motherduck.nyc_service_request_volume limit 1 
+
+```
 
 
 {#if  !test_connection.ready}
@@ -75,9 +80,4 @@ from motherduck.nyc_service_request_volume
 {/if}
 
 
-```test_connection
-
-select 1 from motherduck.nyc_service_request_volume limit 1 
-
-```
 
