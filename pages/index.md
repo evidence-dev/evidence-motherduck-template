@@ -10,7 +10,7 @@ select 1 from motherduck.nyc_service_request_volume limit 1
 ```
 
 
-{#if  !test_connection.ready}
+{#if dev && !test_connection.ready}
 
 ## Connect to MotherDuck 🐣
 
