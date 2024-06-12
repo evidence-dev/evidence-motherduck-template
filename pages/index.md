@@ -44,7 +44,8 @@ from motherduck.nyc_service_request_volume
 <Chart 
     data={daily_service_requests} 
     x=created_date
-    title={`Daily Request Volume and 7 Day Rolling Average`}
+    title={`Daily Request Volume and ${inputs.rolling_avg} Day Rolling Average`}
+    renderer='svg'
 >
     <Line 
         y=rolling_average
